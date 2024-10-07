@@ -27,7 +27,7 @@ def main():
     tabview.pack(expand=True, fill="both", padx=10, pady=10)
 
     Lab1(tabview, "Лабораторна 1")
-    Lab2(tabview, "Одновимірний масив 1")
+    Lab2(tabview, "Лабораторна 2")
 
     rows, cols = 5, 5
     array_obj = TwoDimensionalArray(rows, cols)
