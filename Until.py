@@ -11,10 +11,12 @@ def create_entries(row: int, num_entries: int, frame: CTkFrame) -> list[CTkEntry
         entry_list.append(entry)
     return entry_list
 
-def auto_generate(entry_list: list[CTkEntry]):
+def auto_generate(entry_list: list[CTkEntry], with_negative: bool = False):
     for i, entry in enumerate(entry_list):
         entry.delete(0, "end")
-        entry.insert(0, str(random.randrange(100)))
+        number = random.randrange(-100, 100) if with_negative else random.randrange(100)
+
+        entry.insert(0, str(number))
 
 
 class TwoDimensionalArray:

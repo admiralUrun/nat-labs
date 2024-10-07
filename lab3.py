@@ -38,7 +38,7 @@ class Lab3:
 
         def for_each():
             for es in all_entries:
-                auto_generate(es)
+                auto_generate(es, True)
 
         generate_value_button = ctk.CTkButton(frame, text="Автозаповнення", command=for_each)
         generate_value_button.grid(row=last_available_row, column=0, columnspan=2, pady=20, sticky="ew", padx=10)
