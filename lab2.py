@@ -12,7 +12,7 @@ class Lab2:
         max_label = ctk.CTkLabel(frame, text="Середньоарифметичне між min & max: 0")
         max_label.grid(row=1, column=0, sticky="nsew", columnspan=10)
 
-        self.entry_list = create_entries(10, frame)
+        self.entry_list = create_entries(0, 10, frame)
 
         generate_value_button = ctk.CTkButton(frame, text="Автозаповнення", command=lambda : auto_generate(self.entry_list))
         generate_value_button.grid(row=2, column=0, columnspan=2, pady=20, sticky="ew", padx=10)

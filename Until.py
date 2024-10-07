@@ -3,11 +3,11 @@ import customtkinter as ctk
 from customtkinter import CTkFrame, CTkEntry
 
 
-def create_entries(num_entries: int, frame: CTkFrame) -> list[CTkEntry]:
+def create_entries(row: int, num_entries: int, frame: CTkFrame) -> list[CTkEntry]:
     entry_list = []
     for i in range(num_entries):
-        entry = ctk.CTkEntry(frame, placeholder_text=f"{i}")
-        entry.grid(row=0, column=i, padx=10, pady=10, sticky="ew")
+        entry = ctk.CTkEntry(frame, placeholder_text=f"")
+        entry.grid(row=row, column=i, padx=10, pady=10, sticky="ew")
         entry_list.append(entry)
     return entry_list
 

@@ -3,6 +3,7 @@ import customtkinter as ctk
 
 from lab1 import Lab1
 from lab2 import Lab2
+from lab3 import Lab3
 
 
 def main():
@@ -28,6 +29,7 @@ def main():
 
     Lab1(tabview, "Лабораторна 1")
     Lab2(tabview, "Лабораторна 2")
+    Lab3(tabview, "Лабораторна 3")
 
     rows, cols = 5, 5
     array_obj = TwoDimensionalArray(rows, cols)
